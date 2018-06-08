@@ -6,18 +6,21 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {BootstrapDatePickerComponent} from './date-picker/date-picker.component';
+import {TypeAheadEditorComponent} from './type-ahead/type-ahead.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BootstrapDatePickerComponent
+    BootstrapDatePickerComponent,
+    TypeAheadEditorComponent
   ],
   imports: [
     NgbModule.forRoot(),
     BrowserModule,
     HttpClientModule,
     AgGridModule.withComponents([
-      BootstrapDatePickerComponent
+      BootstrapDatePickerComponent,
+      TypeAheadEditorComponent
     ])
   ],
   providers: [],

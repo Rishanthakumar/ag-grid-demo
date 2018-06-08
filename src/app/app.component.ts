@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import {BootstrapDatePickerComponent} from './date-picker/date-picker.component';
+import {TypeAheadEditorComponent} from './type-ahead/type-ahead.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent implements OnInit{
   columnDefs = [
     { headerName: 'Date', field: 'date', editable: true, cellEditorFramework: BootstrapDatePickerComponent},
     { headerName: 'Make', field: 'make', editable: true},
-    { headerName: 'Model', field: 'model', editable: true },
+    { headerName: 'Model', field: 'model', editable: true, cellEditorFramework: TypeAheadEditorComponent },
     { headerName: 'Price', field: 'price', editable: true }
   ];
 
