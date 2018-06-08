@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    a-g Grid Demo
+  </h1>
+</div>
+
+<div class="row">
+  <ag-grid-angular 
+    style="width: 600px; height: 500px;" 
+    class="ag-theme-balham" 
+    [rowData]="rowData | async" 
+    [columnDefs]="columnDefs"
+    [enableSorting]="true"
+    [enableFilter]="true"
+    rowSelection="multiple"
+    >
+  </ag-grid-angular>
+</div>
