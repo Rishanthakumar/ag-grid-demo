@@ -1,8 +1,1 @@
-<typeahead
-        #typeahead
-        [list]="fruits"
-        [searchProperty]="'searchText'" [displayProperty]="'name'"
-        [maxSuggestions]="2"
-        (suggestionSelected)="fruitSelected($event)"
-        placeholder="Begin typing a fruit">
-</typeahead>
+<input id="typeahead-config" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" />

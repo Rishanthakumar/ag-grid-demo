@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule} from '@angular/forms';
 
 import {BootstrapDatePickerComponent} from './date-picker/date-picker.component';
 import {TypeAheadEditorComponent} from './type-ahead/type-ahead.component';
@@ -18,6 +19,7 @@ import {TypeAheadEditorComponent} from './type-ahead/type-ahead.component';
     NgbModule.forRoot(),
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     AgGridModule.withComponents([
       BootstrapDatePickerComponent,
       TypeAheadEditorComponent
